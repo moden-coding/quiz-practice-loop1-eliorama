@@ -10,7 +10,24 @@ public class App {
     public static void main(String[] args) throws Exception {
         Scanner scanner = new Scanner(System.in);
 
+int even = 0;
+int odd = 0;
+       while (true) {
+        System.out.println("Input a number:");
+int inputnumber = Integer.valueOf(scanner.nextLine()); 
+if (inputnumber%2 == 0){
+System.out.println("The number is even");
+even++;
+}else{
+    System.out.println("The number is odd");
+    odd++;
+} if (inputnumber == -1){
+    break ;
+}
+       } 
 
+   System.out.println("Odd numbers: " + odd + " Even numbers: " + even);
+}
+ 
 
     }
-}
